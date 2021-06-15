@@ -12,7 +12,7 @@ GitHub 사이트의 메인 페이지를 반응형으로 작업
 | Small Devices | Tablets + Phones | 768px 이하 |
 
 ## Organize information
-#### [❤️ HTML](../docs/html.md)
+#### [❤️ HTML](./docs/html.md)
   <em><strong> 1) user-scaleable=no</strong></em>
   > 사용자가 손가락으로 확대하거나 축소하는 것을 사용하지 않겠다.</br>
   > 즉, 사용자가 디바이스에서 확대하거나 축소할 때 레이아웃이 망가지는 것을 막겠다는 의미</br>
