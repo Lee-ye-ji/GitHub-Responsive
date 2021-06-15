@@ -117,10 +117,50 @@
   }
   ```
 
-<em><strong> 10) </strong></em>
+<em><strong> 10) box-sizing: border-box; </strong></em>
+  > padding과 border 속성 특징 중에 요소 커짐이 있음 <br>
+  > 이를 방지하고자 <em><strong>box-sizing: border-box;</strong></em>를 추가
 
-<em><strong> 11) </strong></em>
+<em><strong> 11) position: relative; </strong></em>
+  > <em><strong>position:relative;</strong></em>는 위치의 기준을 설정하는 것이 자기자신으로 설정 하는 것<br>
+  > 레이아웃에는 영향을 주지 않음
+  
+  > <em><strong>position:absolute;</strong></em>는 부모요소에 포지션이 있는지 없는지 확인하기에<br> 
+  > 계속 타고 올라가 브라우저까지 갈 수 있음<br>
+  > 그렇기에 중간에 멈추기 하기 위해서 공통 부분에 <em><strong>position:relative;</strong></em>를 추가
 
-<em><strong> 12) </strong></em>
+<em><strong> 12) 반응형방식 </strong></em>
+  ``` css
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   /* repeat에 들어가는 숫자를 변경해주면 됨! */
+  ```
+  > 하지만 grid를 사용하면 구형의 브라우저를 사용하는 사용자에게는 잘 동작하지 않을 수 있음<br>
+  > 그렇기에 아래와 같이 사용가능
+  ``` css
+  float: left;
+  width: 25%;
+  ```
 
-<em><strong> 13) </strong></em>
+<em><strong> 13) 미디어쿼리 </strong></em>
+  > orientation 뷰포트방향(portrait, landscape)
+  ``` css
+  /* 세로가 가로보다 긴 상태가 되었을 때 : 핸드폰 사이즈 */
+  @media screen and(orientation:portrait){
+    .container{
+      height: 300px;
+      background : blue;
+    }
+  }
+  ```
+  ``` css
+  /* 가로가 더 긴 상태가 되었을 때 : 컴퓨터 사이즈 */
+  /* @media screen and(orientation:landscape){ 
+     생략 되었을 경우 */
+  @media (orientation:landscape){
+    .container{
+      height: 300px;
+      background : blue;
+    }
+  }
+  ```
