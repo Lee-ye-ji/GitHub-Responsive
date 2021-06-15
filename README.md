@@ -1,5 +1,5 @@
 # GitHub main page
-GitHub 사이트의 메인 페이지를 반응형으로 작업합니다.
+GitHub 사이트의 메인 페이지를 반응형으로 작업
 
 ## Deployment / 배포
 https://lee-ye-ji.github.io/GitHub-Responsive/
@@ -26,9 +26,29 @@ https://lee-ye-ji.github.io/GitHub-Responsive/
   ```html
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   ```
-  <em><strong> 3) <meta property="og:type" content="website"></strong></em>
+  <em><strong> 3) meta property="og:type" content="website" </strong></em>
   > <em><b>property</b></em>는 단순하게 속성이라는 의미를 가지고 있음</br>
+  > <em><b>og</b></em> → <em><b>Open Graph</b></em>즉, 정보를 의미함</br>
+  > 정보는 타입이고 그 타입은 웹사이트다라는 의미를 저장
   ```html
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="GitHub">
+<meta property="og:title" content="Lee Ye Ji Clone GitHub">
+<meta property="og:description" content="GitHub Responsive Page">
+<meta property="og:image" content="img/bg.jpg">
+<meta property="og:url" content="https://github.com/">
+
+<!-- Twitter Card -->
+<meta property="twitter:card" content="summary">
+<meta property="twitter:site" content="GitHub">
+<meta property="twitter:title" content="Lee Ye Ji Clone GitHub">
+<meta property="twitter:description" content="GitHub Responsive Page">
+<meta property="twitter:image" content="img/bg.jpg">
+<meta property="twitter:url" content="https://github.com/">
   ```
-    
+> <em><b>Open Graph</b></em> 외부에 제공할 정보를 정의, 정의 되어있는 것이 <em><b>Twitter Card</b></em></br>
+> <em><b>Open Graph</b></em>는 대표적으로 페이스북에서 많이 활용됨</br>
+> 카카오채팅을 통해 url을 보낼시 보여지는 이미지와 같은 문구를 나타냄(즉, 검색엔진)
+
+ 
