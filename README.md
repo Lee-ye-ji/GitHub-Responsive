@@ -14,5 +14,5 @@ GitHub 사이트의 메인 페이지를 반응형으로 작업
 ## Organize information
 #### [❤️ HTML](./docs/html.md)
 #### [🧡 CSS](./docs/css.md)
-#### [💚 JavaScript](./docs/js.md)
+#### [💛 JavaScript](./docs/js.md)
  
