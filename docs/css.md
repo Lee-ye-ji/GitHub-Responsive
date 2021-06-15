@@ -50,18 +50,72 @@
   > 표준이 아닌 웹브라우저별로 실험적으로 사용하는 기능을 제공함 <br>
   > 즉, 웹 브라우저 공급자가 새로운 실험적인 기능을 제공할 때 <br>
   > 이전 버전의 웹 브라우저에 그 사실을 알려주기 위해 사용하는 접두사(prefix)를 의미
-  > https://www.notion.so/GitHub-Responsive-f1bf526ae8184ab4ae280bbaf97884dc#b3b6beaff5114e0882b58f9f3987a47c
+  > ![Untitled](https://user-images.githubusercontent.com/59958929/122028403-f88c4500-ce06-11eb-8dc7-136db5a25aa3.png)
+  ``` css
+  /* Vender Prefix(브라우저 업체별 접두사) */
+  .input--text::-webkit-input-placeholder{ color: red; }
+  .input--text::-ms-input-placeholder{ color: red; }
+  .input--text::-moz-input-placeholder{ color: red; }
+  .input--text::-o-input-placeholder{ color: red; } 
+  /* o - 오페라 브라우저에서는 input placeholder를 지원하지 않으므로 무의미함 */
+  ```
 
+<em><strong> 5) margin: 0 auto; </strong></em>
+  > 가운데 정렬을 나타내는 코드 <br>
+  > 단, width값이 존재해야 가운데로 표시됨
+  ``` css
+  margin: 0 auto;
+  ```
+  
+<em><strong> 6) display: flex; </strong></em>
+  > 자식 요소들이 <b>수평정렬</b>이 되는 코드
 
-<em><strong> 5) </strong></em>
+  > <em><strong> justify-content:center; → 수평정렬 </strong></em> <br>
+  > 자식 요소의 수평정렬을 하려면 → justify-content:center;의 속성을 써야함 <br>
+  > <em><strong> align-items: center; → 수직정렬 </strong></em> <br>
+  > but, height 속성이 있어야 적용됨 → height: 100%;
 
-<em><strong> 6) </strong></em>
+<em><strong> 7) text-indent </strong></em>
+  > img의 alt 속성처럼 대체 텍스트로 사용 가능<br>
+  > <em><strong>text-indent</strong></em> → 들여쓰기 속성 (우측으로 밀림)
+  ``` css
+  text-indent: -9999px;
+  /* 왼쪽으로 밀림 화면에선 사라졌지만 
+      HTML 구조적으론 남아있기에
+      대체 텍스트 역할을 할 수 있음 */
+  ```
+  > 9999 → 명시적인 것(약속같은 의미)  
 
-<em><strong> 7) </strong></em>
+<em><strong> 8) order 속성 </strong></em>
+  > 순서 뒤로 미루기 (숫자의 값이 높을수록 순서가 뒤로 밀려남)
+  ``` css
+  header .btn-group{
+    order: 2;
+  }
+  #search-form{
+      order: 1;
+  }
+  .sub-menu{
+      /* order: 0;  생략가능 */
+  }
+  ```
 
-<em><strong> 8) </strong></em>
-
-<em><strong> 9) </strong></em>
+<em><strong> 9) 아이디(id) 선택자 </strong></em>
+  > 아이디 선택자가 부여되어있을 경우에는 고유한 요소이기 때문에 <br>
+  > 부모의 조상선택자가 명시될 필요가 없다! <br>
+  > 명시하는 게 비효율적임<br>
+  > (단, class경우에는 조상 선택자 명시해야함!)
+  ``` html
+  <form id="search-form" method="POST" action="">
+    <input type="text" id="search" class="input--text" placeholder="Search GitHub">
+    <input type="submit" value="Submit">
+  </form>
+  ```
+  ``` css
+  /* #search-form*/ #search{
+    
+  }
+  ```
 
 <em><strong> 10) </strong></em>
 
