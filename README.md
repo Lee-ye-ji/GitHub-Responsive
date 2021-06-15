@@ -2,7 +2,7 @@
 GitHub 사이트의 메인 페이지를 반응형으로 작업
 
 ## Deployment / 배포
-https://lee-ye-ji.github.io/GitHub-Responsive/
+[YeJi's GitHub Responsive](https://lee-ye-ji.github.io/GitHub-Responsive/)
 
 ## Media(Grid) options
 | 종류 | 디바이스 | 단위(px) |
