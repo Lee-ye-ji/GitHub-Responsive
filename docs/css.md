@@ -14,15 +14,44 @@
 <em><strong> 3) BEM 작명규칙 </strong></em>
   > <em><strong>BEM 작명규칙</strong></em>은 CSS 작명규칙이라고도 함. <br>
   >
-  <b> 1) __ : ~의 일부분 </b> 
+  - __ : ~의 일부분  
   ``` html
   <div class="body__container"></div>
   ```
   > class 이름에 언더바( _ _ )를 두 번 사용한 의미는 ***~의 일부분***이다라는 의미<br>
   > 즉, body의 일부분인 컨테이너다라는 의미<br>
   > 일부분 → 구조적인 일부분
+  
+  - -- : ~의 상태
+  ``` html
+  btn success
+  btn danger
+  btn warning
 
-<em><strong> 4) </strong></em>
+  <div class="btn--success"></div>
+  <div class="btn--danger"></div>
+  <div class="btn--warning"></div>
+  ```
+  > 버튼 중의 성공을 의미를 주는 상태, 위험의 의미를 주는 상태, 경고의 의미를 주는 상태를 의미<br>
+  > 하이픈 즉, 대쉬기호 ( - - )를 두 번 사용
+  
+  - -일반적인 작명
+  ```html
+  toggle btn
+
+  <div class="toggle-btn"></div>
+  ```
+  > 토글인 버튼을 의미하는 것은 하이픈 ( - ) 한 번만 사용
+
+
+<em><strong> 4) Vender Prefix(브라우저 업체별 접두사) </strong></em>
+  > input안에 있는 글자색 바꾸는 방법 <br>
+  > <em><strong>🌐 Vender Prefix(브라우저 업체별 접두사)</strong></em> <br>
+  > 표준이 아닌 웹브라우저별로 실험적으로 사용하는 기능을 제공함 <br>
+  > 즉, 웹 브라우저 공급자가 새로운 실험적인 기능을 제공할 때 <br>
+  > 이전 버전의 웹 브라우저에 그 사실을 알려주기 위해 사용하는 접두사(prefix)를 의미
+  > https://www.notion.so/GitHub-Responsive-f1bf526ae8184ab4ae280bbaf97884dc#b3b6beaff5114e0882b58f9f3987a47c
+
 
 <em><strong> 5) </strong></em>
 
